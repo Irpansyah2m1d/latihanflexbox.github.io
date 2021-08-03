@@ -1,0 +1,168 @@
+/*Reset seluruh css didalam html agar mudah di atur ulang*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 1000px;
+}
+
+
+
+/*Latihan 1*/
+.container-satu {
+	max-width: 800px;
+	background-color: grey;
+	margin: 50px auto;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+}
+
+
+
+.kolom-utama {
+	/*Mengatur ukuran*/
+	flex: 2;
+	/*Mengatur urutan*/
+	order: 2;
+
+}
+
+
+.sidebar-satu {
+	flex: 1;
+	order: 1;
+	margin-right: 10px;
+}
+
+.sidebar-dua {
+	flex: 1;
+	order: 3;
+	margin-left: 10px;
+}
+
+/*Akhir latihan 1*/
+
+
+/*Latihan 2- Services features*/
+
+.container-dua {
+	max-width: 800px;
+	margin: 10px auto;
+}
+
+
+.layanan {
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	margin: 10px;
+}
+.layanan.satu {
+	background-color: lightblue;
+}
+
+.layanan.dua {
+	background-color: lightgreen;
+}
+
+.layanan.tiga {
+	background-color: red;
+}
+/*Akhir Latihan 2*/
+
+/*Awal Latihan 3*/
+
+.container-tiga {
+	max-width: 800px;
+	margin: 50px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.thumbnail {
+	width: 45%;
+	margin: 5px;
+}
+
+.thumbnail img {
+	width: 100%;
+}
+
+/*Akhir Latihan 3*/
+
+/*Latihan 4*/
+
+.container-empat {
+	max-width: 800px;
+	margin: 50px auto;
+	display: flex;
+}
+
+.card {
+	border: 1px solid red;
+	border-radius: 6px;
+	background-color: lightblue;
+	overflow: hidden;
+	margin: 10px;
+	flex: 1;
+}
+
+.card .header {
+	height: 150px;
+	background-color: lightgreen;
+}
+
+.card .content {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.card.besar {
+	transform: scale(1.12);
+}
+
+/*Akhir Latihan 4*/
+
+/*Latihan 5 - Centering*/
+
+.container-lima {
+	max-width: 800px;
+	height: 500px;
+	margin: 50px auto;
+	border: 3px solid red;
+	display: flex;
+}
+
+.kotak {
+	width: 100px;
+	height: 100px;
+	background-color: brown;
+	color: black;
+	text-align: center;
+	margin: auto;
+	display: flex;
+}
+
+.kotak span{
+	margin:auto;
+}
+/*Responsive*/
+
+
+/*ket : jika ukuran layar handphone diatas 600 maka menggunakan css yang di bawah ini tapi jika di bawah 600 maka menggunakan css yang atas*/
+@media(min-width: 600px) {
+	.container-dua {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.layanan {
+		width: 30%;
+	}
+
+	.thumbnail {
+		width: 23%;
+	}
+}
